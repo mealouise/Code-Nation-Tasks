@@ -16,8 +16,8 @@ if (num % 3 | 5) {
 
 let num = 20
 switch(true) {
-    case num % 3:
-    case num % 5:
+    case (num % 3)==0:
+    case (num % 5)==0:
         console.log("This number is divisible by 3 or 5");
     break;
     default:
