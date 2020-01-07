@@ -6,10 +6,20 @@
     Otherwise log “This number is not divisible by 3 or 5”.
 */
 
-let num = 20
+/*let num = 20
 
 if (num % 3 | 5) {
     console.log("This number is divisible by 3 or 5")
 } else {
     console.log("This number is not divisible by 3 or 5")
+}*/
+
+let num = 20
+switch(true) {
+    case num % 3:
+    case num % 5:
+        console.log("This number is divisible by 3 or 5");
+    break;
+    default:
+        console.log("This number is not divisible by 3 or 5");
 }
