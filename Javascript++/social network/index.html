@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>FakeBook</title>
 </head>
 <body>
-    <li><a id="signOut">Sign out</a></li>
+    <h1>FakeBook</h1>
+    <p id="userSignedIn"></p>
+    <p id="userSignedOut"></p>
 
-    <form>
+    <form id="userDetails">
         Email <br>
-        <input type="text" name="email"><br>
-        Password
-        <input type="password" name="psw">
-    </form>
+        <input id="emailDetails" type="text" name="email"><br>
+        Password <br>
+        <input id="passwordDetails" type="password" name="psw">
+    </form><br><br>
+    <button id="signIn">Sign in</button>
+    <button id="signOut">Sign out</button>
+
     
     <script src="app.js"></script>
 </body>
