@@ -19,10 +19,10 @@ const signInFunction = () => {
     if (!signedIn){
         console.log(`I am true`) 
         if (!emailDetails.value) {
-            return alert("Please enter your email")
+            return alert("The email address that you've entered doesn't match any accounts")
         }
         if (!passwordDetails.value) {
-            return alert("Please enter your password")
+            return alert("The password that you've entered doesn't match any accounts")
         }
         // if (passwordDetails.value !== "winston" && ) {
         //     return alert("You have entered the wrong password")

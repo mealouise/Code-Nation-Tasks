@@ -1,3 +1,52 @@
+body {
+    height: 100%;
+    background-image: linear-gradient(to bottom, #f5f7fb, #e3e7f0, #d2d8e5, #c1c8da, #b1b9cf);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:0;
+    margin: 0;
+}
+html {
+    height: 100%;
+}
+
 #signOut {
     display: none;
+    cursor:pointer;
+
+}
+
+#signIn {
+    background-color: #365899;
+    color: white;
+    border: 1px solid black;
+    cursor:pointer;
+}
+
+/* .facebookImage {
+
+} */
+
+h1 {
+    background-color: #365899;
+    font-family: inherit;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size:50px;
+    margin: 0;
+}
+
+#email {
+    border: 1px solid black;
+}
+
+#password {
+    border: 1px solid black;
+}
+
+#userDetails {
+    color:white;
+
 }

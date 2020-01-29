@@ -93,3 +93,14 @@ class Card { // multiples cards wuth same properties. duplicate objects
 // card.createAttributeList();
 
 // card.createAttributeList();
+
+let player1 = true;
+let player1Score;
+let player2Score;
+
+let arrAnimal = ["Snow Leopard", "Giraffe", "Lion"];
+
+let arrPicture = [""];
+
+let arrAttributes = 
+
