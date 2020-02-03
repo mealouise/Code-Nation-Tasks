@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #88b0c9;
+}
+/* .animalTitle h1 {
+    -webkit-transform: rotate(-90deg);
+} */
+
+h1 {
+    text-align:center;
+    line-height: 0.5;
+    color: yellow;
+    font-size:70px;
+}
+
+#play {
+    height:50px;
+    width: 75px;
+    font-size: 25px;
+}
+
+#animalTitle {
+    color:white;
+}
+
+.playerOne {
+    border: 30px solid #f2c830;
+    border-radius: 30px;
+    width: 1%;
+    padding: 300px;
+    
+}
+
+.playerTwo {
+    border: 30px solid #f2c830;
+    border-radius: 30px;
+    width: 1%;
+    padding: 300px;
+}
+
+.cardDeck {
+    padding-top: 150px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-right: 250px;
+}
