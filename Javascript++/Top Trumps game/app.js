@@ -64,16 +64,12 @@ const distributeCards = () => {
             // cardDeck2.textContent = `Card Deck 2: ${player2Cards.length}`;
         }
         // cardDeck = [];
-       
-    
+    }
+    console.log(player2Cards);
+    console.log(player1Cards);
+    console.log('-----------');
+    // score();
 }
-console.log(player2Cards);
-console.log(player1Cards);
-console.log('-----------');
-// score();
-}
-distributeCards();
-
 
 const takeCard = () => {
     showCard();
@@ -110,10 +106,12 @@ const reset = () => {
     player1Cards = [];
     player2Cards = [];
     
-    }
+}
 
 
 const winOrLose = () => {
+
+    
     if (player1Cards.length === 0) {
         console.log("Player 1 has won!")
         player1Status.textContent = "Winner!";
@@ -121,7 +119,8 @@ const winOrLose = () => {
         console.log("Player 2 has won!")
         player2Status.textContent = "Winner!";
     }
-    reset();
+    // dont put reset here as it resets the game even if a player hasnt won.
+    // reset();
 }
     console.log(player1Cards);
     console.log(player2Cards);
@@ -129,24 +128,28 @@ const winOrLose = () => {
     
 
 
+distributeCards();
+// Create a button to reset the game that calls the reset() function and distributeCards() functions
+
 play.addEventListener("click", () => {
+    
     takeCard();
     winOrLose();
 
     cardDeck1.textContent = `Card Deck 1: ${player1Cards.length}`;
     cardDeck2.textContent = `Card Deck 2: ${player2Cards.length}`;
     
-    nameOne.textContent = player1Cards[0].name;
-    nameTwo.textContent = player2Cards[0].name;
-    
-    
+    /* 
+        do an if statementhere to check if player 1 or 2 has won, 
+        if a player has won you dont need to update the cards on the screen
+        i.e do the below.
+    */
+   if(player1Cards.length > 0 && player2Cards.length > 0) {
+        nameOne.textContent = player1Cards[0].name;
+        nameTwo.textContent = player2Cards[0].name;
+   }
 
-
-})  
-
-
-
-
+});
 
 // console.log(cardDeck.length)
 // function to distribute the cards between 2 players   
