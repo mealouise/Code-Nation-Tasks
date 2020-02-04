@@ -49,3 +49,10 @@ h1 {
     align-items: center;
     padding-right: 250px;
 }
+
+#reset {
+    height:50px;
+    width: 90px;
+    font-size: 25px;
+
+}

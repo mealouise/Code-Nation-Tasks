@@ -5,12 +5,7 @@ const player1Status = document.getElementById("player1Status");
 const player2Status = document.getElementById("player2Status");
 const animalImageOne = document.getElementById("animalImage");
 const animalImageTwo = document.getElementById("animalImage");
-
-
-
-
-
-
+const reset = document.getElementById("reset");
 const nameOne = document.getElementById("nameOne");
 const nameTwo = document.getElementById("nameTwo");
 // const speedButton = document.getElementById("speed");
@@ -100,24 +95,26 @@ const takeCard = () => {
 //////////// } else if (player1Cards[0].speed === player2Cards[0].speed){ // creating a holdingpile
     //     const holdingPile = player1Cards.shift();
 
-const reset = () => {
+const restart = () => {
     player1CardNum = 0;
     player2CardNum = 0;
     player1Cards = [];
     player2Cards = [];
     
+    // nameOne.textContent = "",
+    // nameTwo.textContent = "",
 }
 
 
-const winOrLose = () => {
+const loose = () => {
 
     
     if (player1Cards.length === 0) {
-        console.log("Player 1 has won!")
-        player1Status.textContent = "Winner!";
+        console.log("Player 1 has lost!")
+        player1Status.textContent = "You have lost!";
     } else if (player2Cards.length === 0) {
-        console.log("Player 2 has won!")
-        player2Status.textContent = "Winner!";
+        console.log("Player 2 has lost!")
+        player2Status.textContent = "You have lost!";
     }
     // dont put reset here as it resets the game even if a player hasnt won.
     // reset();
@@ -125,7 +122,16 @@ const winOrLose = () => {
     console.log(player1Cards);
     console.log(player2Cards);
     console.log('-----------');
-    
+
+const winner = () => {
+    if (player1Cards.length === 4) {
+        console.log("Player 1 has won!")
+        player1Status.textContent = "Winner";
+    } else if (player2Cards.length === 4) {
+        console.log("Player 2 has won!")
+        player2Status.textContent = "Winner";
+    }
+}
 
 
 distributeCards();
@@ -133,8 +139,9 @@ distributeCards();
 
 play.addEventListener("click", () => {
     
+    winner();
     takeCard();
-    winOrLose();
+    loose();
 
     cardDeck1.textContent = `Card Deck 1: ${player1Cards.length}`;
     cardDeck2.textContent = `Card Deck 2: ${player2Cards.length}`;
@@ -150,6 +157,16 @@ play.addEventListener("click", () => {
    }
 
 });
+
+reset.addEventListener("click", () => {
+    restart();
+
+    nameOne.textContent = "";
+    nameTwo.textContent = "";
+    cardDeck1.textContent = `Card Deck 1:`;
+    cardDeck2.textContent = `Card Deck 2:`;
+});
+
 
 // console.log(cardDeck.length)
 // function to distribute the cards between 2 players   
