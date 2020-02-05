@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "system",
+        "removeComments": true,
+        "target": "ESNext",
+        "outDir": "./dist/",
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}

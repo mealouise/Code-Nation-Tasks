@@ -1,0 +1,19 @@
+.bluestars{
+    height:5px;
+    width: 5px;
+
+}
+
+.container {
+    display: flex;
+}
+/* 
+/* .wrapper {
+    margin-right: 15px;;
+} */ */
+
+
+.profile {
+    height:40px;
+    width:40px;
+}
