@@ -1,0 +1,19 @@
+.button {
+  background-color: #b4b8bf;
+  border-radius: 4px;
+  font-weight: bold;
+  height: 30px;
+}
+
+.container {
+  padding-left: 40px;
+}
+
+.border {
+  border-top: 1px solid black;
+  width:10%;
+}
+
+#button1 {
+  margin-right:10px;
+}
