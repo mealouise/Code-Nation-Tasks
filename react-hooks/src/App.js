@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import './App.css';
 
 function App() {
-  const [movies, setMovies] = useState(
+  const [movies, setMovies] = useState( //initialise the state, function setMovies to update the array
     [
       {
         name: "The Matrix",
