@@ -1,0 +1,51 @@
+.html {
+    display:flex;
+    align-items: center;
+}
+
+.template__container {
+    width:500px;
+    height: 50px;
+    display:flex;
+    justify-content: space-between;
+    background-color:#211f19;
+    margin-bottom:10px;
+    align-items: center;
+}
+
+.template__textbox {
+    color: white;
+    font-weight: 400;
+    margin-left: 20px; 
+}
+
+h4 {
+    margin:0;
+}
+
+.netflix__container {
+    height:500px;
+    width:700px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ 
+}
+
+.netflix__header {
+    color: white;
+    text-align: center;
+}
+
+.template__plussign {
+    color: white;
+    font-size:40px;
+    font-weight: lighter;
+    margin-right: 20px;
+}
+
+.netflix__button {
+    background-color: red;
+}

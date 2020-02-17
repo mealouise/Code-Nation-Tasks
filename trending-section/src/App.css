@@ -1,0 +1,57 @@
+* {box-sizing: border-box;}
+
+
+.wrapper {
+  border-top: 0.25px solid #CAC9C9;
+  line-height: 1px;
+  padding-left: 10px;
+}
+
+.wrapper:hover {
+  background-color: #E7E3E3; 
+}
+
+.headline {
+  font-size: 20px;
+  font-family:"Helvetica Neue",sans-serif;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.trendingCountry {
+  color: grey;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.tweetNumber {
+  color: grey;
+}
+
+/* .padding {
+  background-color: #F9F7F7;
+} */
+
+.container {
+  background-color: #FCFAFA;
+  width: 20%;
+  cursor: pointer;
+}
+
+.arrowdown {
+  color: grey;
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.trendingContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrowdown h4:hover {
+  color:rgb(101, 119, 134);
+}

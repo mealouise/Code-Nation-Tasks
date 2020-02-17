@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar.js'
 import Home from './components/Home.js'
 import About from './components/About.js'
+import Explore from '.components/Explore.js'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
 
