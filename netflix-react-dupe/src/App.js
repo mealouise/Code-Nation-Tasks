@@ -12,7 +12,7 @@ function App() {
       <Template text="How do I cancel?" />
       <Template text="What can I watch on Netflix?" />
       <Template text="How does the free trial work?" />
-      <button classname="netflix__button">TRY 30 DAYS FREE</button>
+      <button className="netflix__button">TRY 30 DAYS FREE ></button>
     </div>
   );
 }

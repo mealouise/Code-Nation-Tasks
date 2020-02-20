@@ -27,7 +27,15 @@ class App extends React.Component {
   calculate = () => {
     // do if statement for each operator e.g if divide then do n1 / n2
     //if statment operator == + then n1 + n2
-
+      if (this.state.operator == "+") {
+        this.state.n1 + this.state.n2
+      } else if (this.state.operator == "-") {
+        this.state.n1 - this.state.n2
+      } else if (this.state.operator == "*") {
+        this.state.n1 * this.state.n2
+      } else if (this.state.operator == "÷") {
+        this.state.n1 / this.state.n2
+      }
   }
 
   buttonClicked = (value) => {

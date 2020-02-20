@@ -1,0 +1,19 @@
+p {
+    font-family: "impact";
+}
+
+.container {
+    width: 50%;
+    background-color: #cae7ed;
+    text-align: center;
+}
+
+.header {
+    width:50%;
+    background-color: #329da8;
+    text-align: center;
+}
+
+.mainForecast {
+    margin:0;
+}

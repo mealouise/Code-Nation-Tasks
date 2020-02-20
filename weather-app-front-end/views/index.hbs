@@ -1,0 +1,29 @@
+<h1 class="header">Current weather data</h1>
+<div class="container">
+{{!-- <p>Current location: {{location}}</p> --
+{{!-- <p>Current temperature: {{temp}}</p>
+<p>Wind speed: {{wind}}</p> --}}
+
+<ul>
+    {{#each data}}
+    <li>{{@key}} : {{this}}</li>
+    {{/each}}
+</ul>
+
+<form action='/' method="POST">
+    <label for="location">Location: </label>
+    <input type="text" name="location" >
+    <label for="countryCode">Country code</label>
+    <input type="text" name="countryCode">
+    <br>
+    <input type="submit" value="send">
+    </form>
+
+
+{{!-- <h1>{{location}}</h1>
+<p class="mainForecast">{{weatherMain}}</p>
+<p>{{weather}}</p>
+<p>{{pressure}}</p>
+<p>{{humidity}}</p>
+<p>{{clouds}}</p> --}}
+</div>
