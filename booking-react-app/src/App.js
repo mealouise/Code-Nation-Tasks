@@ -15,6 +15,7 @@ function App() {
   return (
     <div className="template">
     <div className="container1">
+    <h1>test</h1>
       <Imagebar img={hotelroom1} text="A review about the hotel room"/>
       <Portfolio img={profile1} name="Lisa" country="Portsmouth"/>
       </div>
